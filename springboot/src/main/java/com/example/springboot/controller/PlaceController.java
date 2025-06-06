@@ -1,6 +1,5 @@
 package com.example.springboot.controller;
 
-import com.example.springboot.Repository.PlaceRepository;
 import com.example.springboot.model.Place;
 import com.example.springboot.service.PlaceService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/places")
-@CrossOrigin(origins = "*") // Cho phép gọi từ frontend Flutter
+@CrossOrigin(origins = "*") // Cho phép CORS từ Flutter Web
 public class PlaceController {
 
     @Autowired
